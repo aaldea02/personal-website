@@ -1,13 +1,13 @@
 {
-  "files": {
-    "main.css": "/personal-website/static/css/main.0ec4a409.css",
-    "main.js": "/personal-website/static/js/main.66aab3b5.js",
-    "index.html": "/personal-website/index.html",
-    "main.0ec4a409.css.map": "/personal-website/static/css/main.0ec4a409.css.map",
-    "main.66aab3b5.js.map": "/personal-website/static/js/main.66aab3b5.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.0ec4a409.css",
-    "static/js/main.66aab3b5.js"
-  ]
+  "main.css": "/personal-website/static/css/main.9abe738f.chunk.css",
+  "main.js": "/personal-website/static/js/main.1112befa.chunk.js",
+  "main.js.map": "/personal-website/static/js/main.1112befa.chunk.js.map",
+  "static/js/1.465e2e54.chunk.js": "/personal-website/static/js/1.465e2e54.chunk.js",
+  "static/js/1.465e2e54.chunk.js.map": "/personal-website/static/js/1.465e2e54.chunk.js.map",
+  "runtime~main.js": "/personal-website/static/js/runtime~main.7de33939.js",
+  "runtime~main.js.map": "/personal-website/static/js/runtime~main.7de33939.js.map",
+  "static/css/main.9abe738f.chunk.css.map": "/personal-website/static/css/main.9abe738f.chunk.css.map",
+  "index.html": "/personal-website/index.html",
+  "precache-manifest.3a05a93462d9f19818881ad922206cb9.js": "/personal-website/precache-manifest.3a05a93462d9f19818881ad922206cb9.js",
+  "service-worker.js": "/personal-website/service-worker.js"
 }

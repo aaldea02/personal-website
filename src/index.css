@@ -7,13 +7,8 @@ body {
   align-items: center;
   background-color: #f7f7f7;
   text-align: center; /* Add this line to center align text */
+  margin-top: 60px;
 }
-
-main {
-  margin-top: 120px;
-}
-
-
 
 /* Set the max width of the website */
 .container {
@@ -24,7 +19,7 @@ main {
 /* Style the header */
 header {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 header h1 {
@@ -80,4 +75,34 @@ ul {
 ul li {
   margin-bottom: 10px;
   color: #666;
+}
+
+/* Add a more professional tone */
+.container, header, section {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+section h2 {
+  font-size: 36px;
+}
+
+ul li {
+  font-size: 18px;
+}
+
+a {
+  color: #0077ff;
+  text-decoration: none;
+  border-bottom: 2px solid #0077ff;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #0057ad;
 }

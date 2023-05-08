@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Email, Item, Span, A, renderEmail } from 'react-html-email';
-import nodemailer from 'nodemailer-react';
+import emailjs from 'emailjs-com';
+import './ContactForm.css';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -14,42 +14,17 @@ function ContactForm() {
 
     if (emailCount < 10) {
       try {
-        // Send email using nodemailer
-        const transporter = nodemailer.createTransport({
-          host: 'smtp.gmail.com',
-          port: 587,
-          secure: false,
-          auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASSWORD,
-          },
-        });
-
-        await transporter.sendMail({
-          from: process.env.GMAIL_USER,
-          to: 'arsena0202@gmail.com',
-          subject: 'New message from website contact form',
-          html: renderEmail(
-            <Email title="New message from website contact form">
-              <Item>
-                <Span>Name:</Span>
-                <Span>{name}</Span>
-              </Item>
-              <Item>
-                <Span>Email:</Span>
-                <A href={`mailto:${email}`}>{email}</A>
-              </Item>
-              <Item>
-                <Span>Message:</Span>
-                <Span>{message}</Span>
-              </Item>
-            </Email>
-          ),
-        });
+        // Send email using EmailJS
+        await emailjs.send('service_dqt6duo', 'template_gmail', {
+          from_name: name,
+          from_email: email,
+          message: message,
+        }, 'zAd5WcmGlyUqv_ozv');
 
         console.log('Email successfully sent!');
         alert('Your message has been sent!');
         setEmailCount(emailCount + 1);
+        console.log(`Email count: ${emailCount + 1}`);
         if (emailCount === 9) {
           setIsFormDisabled(true);
         }

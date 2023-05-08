@@ -12,7 +12,7 @@ function App() {
         <section id="about-me">
           <h2>About Me</h2>
           <div className="about-me-content">
-            <img src="your_portrait_url_here" alt="Your portrait" className="portrait" />
+            <img src="images/portrait.jpg" alt="Your portrait" className="portrait" />
             <p>
               I am a computer science student from the University of Florida, with a background in engineering from the University of Central Florida. I'm passionate about software development and have experience working as a software developer intern at PerfectServe. My nationality is [your nationality].
             </p>
@@ -28,8 +28,8 @@ function App() {
           <div className="contact-content">
             <ContactForm />
             <div className="contact-links">
-              <a href="mailto:your_email@example.com" className="contact-link">Email</a>
-              <a href="https://github.com/your_username" className="contact-link">GitHub</a>
+              <a href="mailto:arsena0202@gmail.com" className="contact-link">Email</a>
+              <a href="https://github.com/aaldea02" className="contact-link">GitHub</a>
               <a href="https://www.linkedin.com/in/your_username/" className="contact-link">LinkedIn</a>
             </div>
             <div className="resume-download">
@@ -49,7 +49,7 @@ function App() {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/your_video_id"
+                src="https://www.youtube.com/embed/lS4vblYZpMA"
                 title="Diamond Pathfinder"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -59,6 +59,7 @@ function App() {
           </div>
         </section>
       </main>
+      <div className="space"></div>
     </div>
   );
 }

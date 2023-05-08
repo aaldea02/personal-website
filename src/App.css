@@ -6,24 +6,21 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-.App {
   background-color: #1d1f2f;
   color: #e6e6e6;
 }
 
-.App h2 {
+h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.App a {
+a {
   color: #e6e6e6;
   text-decoration: none;
 }
 
-.App a:hover {
+a:hover {
   color: #c4a7ff;
 }
 
@@ -44,3 +41,4 @@ body {
 .about-me-links {
   display: flex;
   gap: 1rem;
+}

@@ -9,16 +9,18 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <section id="about-me">
+      <section id="about-me">
           <h2>About Me</h2>
           <div className="about-me-content">
-            <img src="images/portrait.jpg" alt="Your portrait" className="portrait" />
-            <p>
-              I am a computer science student from the University of Florida, with a background in engineering from the University of Central Florida. I'm passionate about software development and have experience working as a software developer intern at PerfectServe. My nationality is [your nationality].
-            </p>
-            <div className="about-me-links">
-              <a href="#contact" className="scroll-link">Contact</a>
-              <a href="#projects" className="scroll-link">Projects</a>
+            <img src="/images/portrait.jpg" alt="Your portrait" className="portrait" />
+            <div className="about-me-text">
+              <p>
+                I am a computer science student at the University of Florida, currently pursuing a Bachelor's degree in Liberal Arts and Sciences. I am passionate about software development and have hands-on experience in the field, having worked as a software developer intern at PerfectServe. During my internship, I have honed my skills in various programming languages, front-end technologies, and back-end systems while working on several real-world projects.
+              </p>
+              <div className="about-me-links">
+                <a href="#contact" className="scroll-link">Contact</a>
+                <a href="#projects" className="scroll-link">Projects</a>
+              </div>
             </div>
           </div>
         </section>
@@ -39,11 +41,11 @@ function App() {
         </section>
 
         <section id="projects">
-          <h2>Projects</h2>
+          <h2>PersonalProjects</h2>
           <div className="project">
             <h3>Diamond Pathfinder</h3>
             <p>
-              Description of the Diamond Pathfinder project.
+            The Diamond Pathfinder project is a pathfinding optimization study for the popular game Minecraft, specifically focusing on its Baritone mod. I built and compared two classic pathfinding algorithms, Bellman-Ford and Dijkstra's, implemented in Java to analyze their efficiency in the game environment. By logging the results using Java and MySQL, I was able to identify the optimal choice for pathfinding in Minecraft's Baritone mod, improving in-game navigation and resource gathering. Through this project, I developed skills in Java programming, algorithm design, and data analysis using MySQL.
             </p>
             <div className="video-container">
               <iframe
@@ -65,3 +67,4 @@ function App() {
 }
 
 export default App;
+

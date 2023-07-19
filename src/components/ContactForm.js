@@ -1,8 +1,32 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './ContactForm.css';
+import { TextField, Button, makeStyles, Box } from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '80%',
+    margin: '0 auto',
+    padding: theme.spacing(2),
+    border: '2px solid #ccc',
+    borderRadius: theme.shape.borderRadius,
+  },
+  field: {
+    margin: theme.spacing(1, 0),
+  },
+  button: {
+    margin: theme.spacing(1, 0),
+    backgroundColor: '#1e90ff',
+    color: '#fff',
+    '&:hover': {
+      backgroundColor: '#0077b6',
+    },
+  },
+}));
 
 function ContactForm() {
+  const classes = useStyles();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -41,42 +65,35 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          disabled={isFormDisabled}
-        />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          disabled={isFormDisabled}
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          value={message}
-          onChange={(event) => setMessage(event.target.value)}
-          disabled={isFormDisabled}
-        ></textarea>
-      </div>
-      <div>
-        <button type="submit" disabled={isFormDisabled}>
-          Send
-        </button>
-      </div>
-    </form>
+    <Box component="form" onSubmit={handleSubmit} className={classes.form}>
+      <TextField
+        label="Name"
+        value={name}
+        onChange={(event) => setName(event.target.value)}
+        disabled={isFormDisabled}
+        className={classes.field}
+      />
+      <TextField
+        label="Email"
+        type="email"
+        value={email}
+        onChange={(event) => setEmail(event.target.value)}
+        disabled={isFormDisabled}
+        className={classes.field}
+      />
+      <TextField
+        label="Message"
+        multiline
+        rows={4}
+        value={message}
+        onChange={(event) => setMessage(event.target.value)}
+        disabled={isFormDisabled}
+        className={classes.field}
+      />
+      <Button type="submit" disabled={isFormDisabled} className={classes.button}>
+        Send
+      </Button>
+    </Box>
   );
 }
 

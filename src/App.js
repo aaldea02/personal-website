@@ -10,6 +10,7 @@ import MomsBookClub from './components/MomsBookClub.js';
 
 const useStyles = makeStyles((theme) => ({
   app: {
+    padding: theme.spacing(2),
     '& #about-me': {
       display: 'flex',
       flexDirection: 'column',
@@ -21,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         padding: theme.spacing(1),
       },
+      padding: theme.spacing(2),
     },
     '& #projects': {
       display: 'flex',
@@ -33,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         padding: theme.spacing(1),
       },
+      padding: theme.spacing(2),
     },
     '& #contact': {
       display: 'flex',
@@ -45,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         padding: theme.spacing(1),
       },
+      padding: theme.spacing(2),
     },
     '& .about-me-content': {
       display: 'flex',
@@ -56,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         flexDirection: 'column',
       },
+      padding: theme.spacing(2),
     },
     '& .portrait': {
       width: '30%',
@@ -64,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         width: '10%',
       },
+      padding: theme.spacing(2),
     },
     '& .typing-text': {
       width: '70%',
@@ -73,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: 0,
         marginTop: theme.spacing(2),
       },
+      padding: theme.spacing(2),
     },
   },
 }));

@@ -7,13 +7,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     width: '80%',
-    margin: '0 auto',
-    padding: theme.spacing(2),
+    margin: theme.spacing(3),
+    padding: theme.spacing(3),
     border: '2px solid #ccc',
     borderRadius: theme.shape.borderRadius,
   },
   field: {
-    margin: theme.spacing(1, 0),
+    margin: theme.spacing(2, 0),
   },
   button: {
     margin: theme.spacing(1, 0),

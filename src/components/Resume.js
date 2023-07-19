@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     gap: theme.spacing(1),
     width: '100%',
-    marginTop: theme.spacing(10),
+    marginTop: theme.spacing(15),
   },
   button: {
     fontSize: '1.2rem',
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#3a3d58',
       color: '#847a99',
     },
-    marginRight: theme.spacing(0.5),
+    marginRight: theme.spacing(2),
   },
   previewContainer: {
     display: 'flex',

@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: '50%',
       objectFit: 'cover',
       [theme.breakpoints.down('sm')]: {
-        width: '100%',
+        width: '10%',
       },
     },
     '& .typing-text': {
@@ -77,8 +77,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
-
 function App() {
   const classes = useStyles();
 
@@ -86,7 +84,7 @@ function App() {
     <Box className={classes.app}>
       <Header />
       <main>
-      <Box id="about-me">
+        <Box id="about-me">
           <h2>About Me</h2>
           <Grid container className={classes['about-me-content']}>
             <Grid item xs={12} md={6}>

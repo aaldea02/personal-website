@@ -1,0 +1,58 @@
+/* Resume.css */
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 10%;
+  }
+  
+  .resume-button {
+    position: relative;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1d1f2f;
+    background-color: #b1a5ca;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 0.5rem;
+  }
+  
+  .resume-button:hover {
+    background-color: #3a3d58;
+    color: #847a99;
+  }
+  
+  .resume-preview-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .resume-preview {
+    position: absolute;
+ 
+    width: 20vw;
+    height: 25vh;
+    margin-top: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(29, 9, 69, 0.2);
+    border-radius: 5px;
+  }
+  
+  .resume-preview iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  

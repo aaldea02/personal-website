@@ -2,27 +2,33 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import ContactForm from './components/ContactForm';
-import DownloadResume from './components/Resume';
+import Resume from './components/Resume';
+import TypingText from './components/TypingText';
+import MineSweeperEscape from './components/MineSweeperEscape';
+import MomsBookClub from './components/MomsBookClub.js';
 
 function App() {
   return (
     <div className="App">
+      
       <Header />
       <main>
-      <section id="about-me">
-          <h2>About Me</h2>
+        <section id="about-me">
+     
+          <h2>About Me</h2> 
+   
           <div className="about-me-content">
-            <img src="/images/portrait.jpg" alt="Your portrait" className="portrait" />
+            <img src="https://drive.google.com/uc?export=download&id=1U4Inr_HO-0hBzfYjjxtD-bXeZRYi7P2_" alt="Your portrait" className="portrait" />
             <div className="about-me-text">
-              <p>
-                I am a computer science student at the University of Florida, currently pursuing a Bachelor's degree in Liberal Arts and Sciences. I am passionate about software development and have hands-on experience in the field, having worked as a software developer intern at PerfectServe. During my internship, I have honed my skills in various programming languages, front-end technologies, and back-end systems while working on several real-world projects.
-              </p>
-              <div className="about-me-links">
-                <a href="#contact" className="scroll-link">Contact</a>
-                <a href="#projects" className="scroll-link">Projects</a>
+              <div>
+                <TypingText/>
+              </div>
+              <div>
+                <Resume />
               </div>
             </div>
           </div>
+
         </section>
 
         <section id="contact">
@@ -34,14 +40,12 @@ function App() {
               <a href="https://github.com/aaldea02" className="contact-link">GitHub</a>
               <a href="https://www.linkedin.com/in/your_username/" className="contact-link">LinkedIn</a>
             </div>
-            <div className="resume-download">
-              <DownloadResume />
-            </div>
+          
           </div>
         </section>
 
         <section id="projects">
-          <h2>PersonalProjects</h2>
+          <h2>Personal Projects</h2>
           <div className="project">
             <h3>Diamond Pathfinder</h3>
             <p>
@@ -59,6 +63,8 @@ function App() {
               ></iframe>
             </div>
           </div>
+        <MineSweeperEscape/>
+        <MomsBookClub/>
         </section>
       </main>
       <div className="space"></div>
@@ -67,4 +73,3 @@ function App() {
 }
 
 export default App;
-

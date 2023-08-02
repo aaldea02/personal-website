@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Button, makeStyles, Box, Paper } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -40,16 +41,19 @@ const useStyles = makeStyles((theme) => ({
 
 function Resume() {
   const classes = useStyles();
+=======
+>>>>>>> parent of 8090286 (Commit 7/19/23)
 
   const handleClick = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1a7Ej2kGbIfddAJ9WO23X368WJgfeXBsT';
+    link.href = 'https://drive.google.com/uc?export=download&id=1Km_UmHutRh9tKEg2RSI32ZVjiM0ogkT-';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
+<<<<<<< HEAD
     <Box className={classes.container}>
       <Button onClick={handleClick} className={classes.button}>
         Download Resume
@@ -63,6 +67,11 @@ function Resume() {
         </Paper>
       </Box>
     </Box>
+=======
+    <button onClick={handleClick}>
+      Download Resume
+    </button>
+>>>>>>> parent of 8090286 (Commit 7/19/23)
   );
 }
 

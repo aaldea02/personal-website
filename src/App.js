@@ -3,10 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Grid } from '@material-ui/core';
 import Header from './components/Header';
 import ContactForm from './components/ContactForm';
-import Resume from './components/Resume';
-import TypingText from './components/TypingText';
-import MineSweeperEscape from './components/MineSweeperEscape';
-import MomsBookClub from './components/MomsBookClub.js';
+import DownloadResume from './components/Resume';
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -88,9 +85,11 @@ function App() {
   const classes = useStyles();
 
   return (
+<<<<<<< HEAD
     <Box className={classes.app}>
       <Header />
       <main>
+<<<<<<< HEAD
         <Box id="about-me">
           <h2>About Me</h2>
           <Grid container className={classes['about-me-content']}>
@@ -106,6 +105,40 @@ function App() {
           </Grid>
         </Box>
         <Box id="contact">
+=======
+        <section id="about-me">
+          <h2>About Me</h2>
+          <div className="about-me-content">
+            <img src="images/portrait.jpg" alt="Your portrait" className="portrait" />
+            <p>
+              I am a computer science student from the University of Florida, with a background in engineering from the University of Central Florida. I'm passionate about software development and have experience working as a software developer intern at PerfectServe. My nationality is [your nationality].
+            </p>
+            <div className="about-me-links">
+              <a href="#contact" className="scroll-link">Contact</a>
+              <a href="#projects" className="scroll-link">Projects</a>
+=======
+    <div className="App">
+      <Header />
+      <main>
+      <section id="about-me">
+          <h2>About Me</h2>
+          <div className="about-me-content">
+            <img src="/images/portrait.jpg" alt="Your portrait" className="portrait" />
+            <div className="about-me-text">
+              <p>
+                I am a computer science student at the University of Florida, currently pursuing a Bachelor's degree in Liberal Arts and Sciences. I am passionate about software development and have hands-on experience in the field, having worked as a software developer intern at PerfectServe. During my internship, I have honed my skills in various programming languages, front-end technologies, and back-end systems while working on several real-world projects.
+              </p>
+              <div className="about-me-links">
+                <a href="#contact" className="scroll-link">Contact</a>
+                <a href="#projects" className="scroll-link">Projects</a>
+              </div>
+>>>>>>> parent of 8090286 (Commit 7/19/23)
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+>>>>>>> parent of 61e0e3d (Meow)
           <h2>Contact Me</h2>
           <Box className="contact-content">
             <ContactForm />
@@ -113,6 +146,7 @@ function App() {
               <a href="mailto:arsena0202@gmail.com" className="contact-link">Email</a>
               <a href="https://github.com/aaldea02" className="contact-link">GitHub</a>
               <a href="https://www.linkedin.com/in/your_username/" className="contact-link">LinkedIn</a>
+<<<<<<< HEAD
             </Box>
           </Box>
         </Box>
@@ -122,6 +156,31 @@ function App() {
             <h3>Diamond Pathfinder</h3>
             <p>
               The Diamond Pathfinder project is a pathfinding optimization study for the popular game Minecraft, specifically focusing on its Baritone mod. I built and compared two classic pathfinding algorithms, Bellman-Ford and Dijkstra's, implemented in Java to analyze their efficiency in the game environment. By logging the results using Java and MySQL, I was able to identify the optimal choice for pathfinding in Minecraft's Baritone mod, improving in-game navigation and resource gathering. Through this project, I developed skills in Java programming, algorithm design, and data analysis using MySQL.
+=======
+            </div>
+            <div className="resume-download">
+              <DownloadResume />
+            </div>
+<<<<<<< HEAD
+=======
+            <div className="resume-download">
+              <DownloadResume />
+            </div>
+>>>>>>> parent of 8090286 (Commit 7/19/23)
+          </div>
+        </section>
+
+        <section id="projects">
+<<<<<<< HEAD
+          <h2>Projects</h2>
+=======
+          <h2>PersonalProjects</h2>
+>>>>>>> parent of 8090286 (Commit 7/19/23)
+          <div className="project">
+            <h3>Diamond Pathfinder</h3>
+            <p>
+              Description of the Diamond Pathfinder project.
+>>>>>>> parent of 61e0e3d (Meow)
             </p>
             <Box className="video-container">
               <iframe
@@ -133,11 +192,17 @@ function App() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
+<<<<<<< HEAD
             </Box>
           </Box>
           <MineSweeperEscape />
           <MomsBookClub />
         </Box>
+=======
+            </div>
+          </div>
+        </section>
+>>>>>>> parent of 8090286 (Commit 7/19/23)
       </main>
       <Box className="space"></Box>
     </Box>
@@ -145,3 +210,4 @@ function App() {
 }
 
 export default App;
+

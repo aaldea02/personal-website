@@ -49,6 +49,7 @@ function Header() {
   const classes = useStyles();
 
   return (
+<<<<<<< HEAD
     <AppBar className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
         <Typography className={classes.title}>
@@ -67,6 +68,11 @@ function Header() {
         </div>
       </Toolbar>
     </AppBar>
+=======
+    <header className="header-container">
+      <h1 className="header-text">Arsen Aldea's Personal Website</h1>
+    </header>
+>>>>>>> parent of 8090286 (Commit 7/19/23)
   );
 }
 
